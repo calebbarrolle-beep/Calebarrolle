@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Caleb Happy Barrolle — Portfolio</title>
+  <meta name="description" content="Portfolio of Caleb Happy Barrolle — Website developer, student at Starz University, and professional athlete." />
+  <style>
+    
+    :root{
+      --bg:#000000; /* dark navy */
+      --card:#0b1220;
+      --muted:#000000;
+      --accent:#000000;
+      --glass: rgba(0, 0, 0, 0.03);
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: linear-gradient(180deg,#e9ebf0 0%, #eff1f5 100%); color:#000000}
+    .container{max-width:var(--max-width);margin:28px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#8b5cf6);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px;color:#000000}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600}
+    nav a:hover{color:var(--accent)}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-top:22px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:22px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .intro h1{margin:0;font-size:34px;letter-spacing:-0.6px}
+    .intro p{color:var(--muted);margin:10px 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#f1f1f1}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)}
+
+    .stats{display:flex;gap:12px;margin-top:16px}
+    .stat{background:var(--glass);padding:10px 12px;border-radius:10px;text-align:center}
+    .stat strong{display:block;font-size:18px}
+    
+    /* right column */
+    .profile-card{display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center}
+    .profile-photo{width:160px;height:160px;border-radius:16px;background:linear-gradient(180deg,#0b1220, #0d1b2a);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px}
+    .profile-meta{color:var(--muted)}
+
+    /* sections */
+    main{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:24px}
+    .main-col{min-height:200px}
+    section + section{margin-top:16px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;font-weight:700;color:var(--muted)}
+
+    .education, .experience{display:flex;flex-direction:column;gap:10px}
+    .edu-item, .exp-item{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+    .edu-item small, .exp-item small{color:var(--muted)}
+
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border:1px solid rgba(255,255,255,0.02)}
+    .project h4{margin:0 0 6px}
+    .project p{color:var(--muted);margin:0}
+
+    aside .contact-card{position:sticky;top:28px}
+    .contact-card form{display:flex;flex-direction:column;gap:8px}
+    .input, textarea{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);padding:10px;border-radius:8px;color:inherit}
+    .footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:20px}
+
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      main{grid-template-columns:1fr}
+      .projects{grid-template-columns:1fr}
+      .avatar{width:64px;height:64px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">CHB</div>
+        <div>
+          <div style="font-weight:800">Caleb Happy Barrolle</div>
+          <div style="font-size:13px;color:var(--muted)">Website Developer • Student • Professional Athlete</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="About Me.html">ABOUT</a>
+        <a href="Contact Me.html">CONTACT US</a>
+        <a href="My favorities.html"> FAVORITIES</a>
+        <a href="Portfolio.html">PORTFOLIO</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="card intro">
+        <h1>Hi — I’m <span style="color:var(--accent)">Caleb Happy Barrolle</span></h1>
+        <p>Born October 8, 2005 in Monrovia, Liberia. I build websites, enjoy coding, and compete as a professional athlete (basketball). Currently a student at Starz University.</p>
+        <div class="cta">
+          <button class="btn btn-primary">Download CV</button>
+          <button class="btn btn-ghost">Contact Me</button>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><strong>75+</strong><span style="color:var(--muted);font-size:12px">Projects & Schoolwork</span></div>
+          <div class="stat"><strong>2</strong><span style="color:var(--muted);font-size:12px">Work Roles</span></div>
+          <div class="stat"><strong>Starz</strong><span style="color:var(--muted);font-size:12px">University</span></div>
+        </div>
+
+        <section id="about" style="margin-top:16px">
+          <h3>About Me</h3>
+          <p style="color:var(--muted);line-height:1.5">My name is <strong>Caleb Happy Barrolle</strong>. I was born on <strong>October 8, 2005</strong> in <strong>Monrovia, Liberia</strong>. I live in <strong>Duazon Rock Crusher</strong>. I love basketball, music, and gaming. I build websites and apps, work with hardware, and enjoy improving my coding skills every day. I am dedicated, hardworking, and eager to learn — both on the court and behind the screen.</p>
+        </section>
+
+        <section id="skills" style="margin-top:14px">
+          <h3>Skills & Expertise</h3>
+          <div class="skills">
+            <span class="skill">Website Development</span>
+            <span class="skill">App Building</span>
+            <span class="skill">Coding</span>
+            <span class="skill">Hardware</span>
+            <span class="skill">Gaming</span>
+            <span class="skill">Front-end</span>
+            <span class="skill">Responsive Design</span>
+          </div>
+        </section>
+
+      </div>
+
+      <aside class="card profile-card">
+        <div class="" aria-hidden="true">
+          <!-- Replace this with an actual photo by swapping the div with an <img> -->
+          CHB
+        </div>
+        <div style="text-align:center">
+          <div style="font-weight:800">Caleb Happy Barrolle</div>
+          <div class="profile-meta">Student at Starz University · Website Developer · Professional Athlete</div>
+        </div>
+        <div style="width:100%" class="card profile-meta" aria-hidden>
+          <div style="font-weight:700">Quick Info</div>
+          <div style="color:var(--muted);font-size:14px;margin-top:8px">
+            <div><strong>Birth:</strong> October 8, 2005</div>
+            <div><strong>From:</strong> Monrovia, Liberia</div>
+            <div><strong>Address:</strong> Duazon Rock Crusher</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <main>
+      <div class="main-col">
+        <section id="education" class="card">
+          <h3>Education</h3>
+          <div class="education">
+            <div class="edu-item">
+              <div style="font-weight:800">Effort Baptist Church School</div>
+              <small>2023–2024 — High School Graduate</small>
+              <p style="color:var(--muted);margin-top:8px">Completed secondary education — focused on general studies and foundational computer skills.</p>
+            </div>
+
+            <div class="edu-item">
+              <div style="font-weight:800">Starz University</div>
+              <small>Currently Studying — Program Not Specified</small>
+              <p style="color:var(--muted);margin-top:8px">Enrolled at Starz University. (Let me know the exact program and I will update this.)</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="work" class="card" style="margin-top:14px">
+          <h3>Work Experience</h3>
+          <div class="experience">
+            <div class="exp-item">
+              <div style="font-weight:800">Website Developer</div>
+              <small>Freelance / Personal Projects</small>
+              <p style="color:var(--muted);margin-top:6px">Designing and building websites for school projects and local clients — focusing on clean front-end interfaces, responsive layouts, and user-friendly design.</p>
+            </div>
+
+            <div class="exp-item">
+              <div style="font-weight:800">Professional Athlete — Basketball</div>
+              <small>Team / Competitive Play</small>
+              <p style="color:var(--muted);margin-top:6px">Competing as a basketball player. This role has developed my discipline, teamwork, leadership, and ability to perform under pressure.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="card" style="margin-top:14px">
+          <h3>Selected Projects & Work</h3>
+          <div class="projects">
+            <div class="project">
+              <h4>Portfolio Website</h4>
+              <p>Personal portfolio site showcasing projects, skills, and contact info. Built with HTML and CSS and optimized for mobile.</p>
+            </div>
+            <div class="project">
+              <h4>School App / Project</h4>
+              <p>Student project focused on building a small app to manage school assignments and deadlines.</p>
+            </div>
+            <div class="project">
+              <h4>Game Setup & Hardware Build</h4>
+              <p>Assembled and optimized a gaming workstation — hardware configuration and performance tuning.</p>
+            </div>
+            <div class="project">
+              <h4>Client Website</h4>
+              <p>Built a simple informational website for a local business — responsive, fast, and easy to update.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <aside>
+        <div class="card contact-card">
+          <h3 id="contact">Contact</h3>
+          <p style="color:var(--muted)">Want to work together or reach out? Use this quick form or add your preferred contact details below.</p>
+          <form>
+            <input class="input" type="text" placeholder="Your name" />
+            <input class="input" type="email" placeholder="Your email" />
+            <textarea class="input" rows="4" placeholder="Message"></textarea>
+            <button type="button" class="btn btn-primary">Send Message</button>
+          </form>
+
+          <div style="margin-top:12px;color:var(--muted)">
+            <div><strong>Location:</strong> Duazon Rock Crusher, Liberia</div>
+            <div><strong>Parents:</strong> Korto S. Barrolle (mother) · Moses Z. Barrolle (father)</div>
+            <div style="margin-top:8px"><strong>Hobbies:</strong> Basketball · Music · Gaming</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4>Quick Links</h4>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+            <a href="#projects" style="color:var(--accent);text-decoration:none;font-weight:700">View Projects</a>
+            <a href="#work" style="color:var(--accent);text-decoration:none;font-weight:700">Work Experience</a>
+            <a href="#education" style="color:var(--accent);text-decoration:none;font-weight:700">Education</a>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+    <div class="footer">
+      © <span id="year"></span> Caleb Happy Barrolle — Built with care. <span style="color:var(--muted)">Made in Monrovia.</span>
+    </div>
+  </div>
+
+  <script>
+    // small interactive touches
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Download CV button placeholder — replace with real link if you have a CV file
+    document.querySelector('.btn-primary').addEventListener('click', function(){
+      alert('If you have a CV file you want to link, replace the Download CV button action with a link to the file.');
+    });
+  </script>
+</body>
+</html>
